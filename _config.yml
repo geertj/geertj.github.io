@@ -1,0 +1,11 @@
+# Site settings
+title: Geert's Notes
+email: geertj@gmail.com
+description: Geert's personal blog. Opinions are my own.
+baseurl: ""
+url: "http://geertj.me"
+twitter_username: 1geertj
+github_username:  geertj
+
+# Build settings
+markdown: kramdown
