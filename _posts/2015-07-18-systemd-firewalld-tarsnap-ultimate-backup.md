@@ -108,7 +108,7 @@ Description=Run tarsnap backup
 
 [Service]
 Type=oneshot
-ExecStart=/bin/sh $HOME/bin/run-tarsnap
+ExecStart=/bin/sh ${HOME}/bin/run-tarsnap
 {% endhighlight %}
 
 Finally the backup script. Store it in `~/bin/run-tarsnap`. The script is
@@ -135,7 +135,7 @@ files="Documents Projects"  # configure this
 test -f ~/.backup-timestamp &&
   test "`find ~/.backup-timestamp -mmin -1440 | wc -l`" -eq 1 && \
     test "`find $files -newer ~/.backup-timestamp | wc -l`" -eq 0  && \
-      { echo "Last backup < 24 hours and no changes, exiting."; exit 0; }
+      { echo "Last backup < 24 hours and no changes, exiting."; sleep 1; exit 0; }
 
 label="`date +'%Y%m%d-%H%M'`"
 tarsnap -c -f "$USER-$label" $files
