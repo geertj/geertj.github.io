@@ -6,6 +6,13 @@ baseurl: ""
 url: "http://geertj.me"
 twitter_username: 1geertj
 github_username:  geertj
+excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
