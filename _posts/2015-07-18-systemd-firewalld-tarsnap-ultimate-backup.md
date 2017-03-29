@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Backups without Worries: Tarsnap, Systemd and Firewalld"
+title: "Backing up the Linux Desktop using Tarsnap, Systemd, Firewalld"
 comments: true
-excerpt_separator: <!--more-->
-
+tags: linux
 ---
 
-For years, I've been looking for the perfect backup solution. I thought I had
-found it for some time in Dropbox, but I recently abandoned that due to
-concerns around privacy. I looked around, and I believe that I have found
-something (much) better now. And the great thing? It was actually pretty easy,
-by combining some recent developments in Linux desktop land.
+For a long time, I've been looking for a good backup solution for my Linux
+desktop. I thought I had found it for some time in Dropbox, but I recently
+abandoned that due to concerns around privacy. I looked around, and I believe
+that I have found something (much) better now. And the great thing? It was
+actually pretty easy, by combining some recent developments in Linux desktop
+land.
 
 <!--more-->
 
